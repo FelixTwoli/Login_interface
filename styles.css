@@ -14,7 +14,7 @@
   --primary-hsl: rgb(69, 69, 219);
   --primary-dark-hsl: 200, 100%, 6%;
   --success-hsl: 100, 60%, 50%;
-  --error-hsl: 0%, 60%, 50%;
+  --error-hsl: 10%, 60%, 50%;
 }
 
 
