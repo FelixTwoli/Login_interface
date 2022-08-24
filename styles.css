@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-light-hsl: 200%, 100%, 91%;
+  --primary-hsl: rgb(69, 69, 219);
+  --primary-dark-hsl: 200, 100%, 6%;
+  --success-hsl: 100, 60%, 50%;
+  --error-hsl: 0%, 60%, 50%;
+}
+
+
+
+.fullscreen-container {
+  background-image: url(background-image.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title {
+  color: #fff;
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.login-container {
+  background-color: hsl(var(--primary-dark-hsl), 0.7);
+  padding: 40px 30px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+}
+
+.input-group label {
+  color: white;
+  font-weight: lighter;
+}
+
+.input-group input {
+  padding: .3em;
+  border-radius: .28rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  background-color: hsl(var(--primary-dark-hsl), 0.5);
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  border: 2px solid rgb(27, 137, 221);
+}
+
+.input-group.success input {
+  border: 2px solid hsl(var(--success-hsl));
+}
+
+
+.input-group.error input {
+    border: 2px solid rgb(232, 123, 123);
+    }
+
+.input-group .msg {
+  display: none;  
+
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.input-group.error .msg,
+.input-group.success .msg {
+  display: block;
+
+}
+
+.input-group.success .msg {
+  color: hsl(var(--success-hsl));
+}
+
+.input-group.error .msg {
+  color: red;
+}
+
+.login-btn {
+  padding: 0.2em 1em;
+  border-radius: .28rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: rgb(121, 121, 199);
+  font-weight: lighter;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid hsl(var(--primary-hsl));
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background-color: rgb(65, 65, 175);
+}
+
+
+
+  
